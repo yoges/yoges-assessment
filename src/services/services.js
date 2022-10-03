@@ -3,7 +3,7 @@ import axios from "axios";
 const baseURL = "https://localhost:3000/api";
 
 export const getData = async () => {
-  return axios.get(`${baseURL}/posts`).slice(0, 4);
+  return axios.get(`${baseURL}/posts`);
 };
 
 export const filterData = async (filter) => {
